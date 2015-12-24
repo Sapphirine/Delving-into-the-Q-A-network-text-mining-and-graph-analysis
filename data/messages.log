@@ -1,0 +1,43 @@
+2015-12-15 21:07:57.225+0000 INFO  [o.n.u.i.b.ParallelBatchImporter] Import starting
+2015-12-15 21:07:57.735+0000 WARN  [o.n.k.i.s.MetaDataStore] Missing counts store, rebuilding it.
+2015-12-15 21:07:58.042+0000 INFO  [o.n.k.a.i.i.LuceneLabelScanStore] No lucene scan store index found, this might just be first use. Preparing to rebuild.
+2015-12-15 21:07:58.346+0000 INFO  [o.n.k.a.i.i.LuceneLabelScanStore] Rebuilding lucene scan store, this may take a while
+2015-12-15 21:07:58.348+0000 INFO  [o.n.k.a.i.i.LuceneLabelScanStore] Lucene scan store rebuilt (roughly -1 nodes)
+2015-12-15 21:07:58.597+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 1 to [/Users/Zhen/desktop/Courses/Bigdata/stackexchange/data/neostore.counts.db.b], from [/Users/Zhen/desktop/Courses/Bigdata/stackexchange/data/neostore.counts.db.a].
+2015-12-15 21:07:58.598+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 1 to [/Users/Zhen/desktop/Courses/Bigdata/stackexchange/data/neostore.counts.db.b], from [/Users/Zhen/desktop/Courses/Bigdata/stackexchange/data/neostore.counts.db.a].
+2015-12-15 21:07:58.617+0000 ERROR [o.n.u.i.b.ParallelBatchImporter] Error during import Extra column not present in header on line 7 in /Users/Zhen/Desktop/Courses/BigData/stackexchange/data/post2.csv with value  libsvm];186;;1
+org.neo4j.unsafe.impl.batchimport.input.InputException: Extra column not present in header on line 7 in /Users/Zhen/Desktop/Courses/BigData/stackexchange/data/post2.csv with value  libsvm];186;;1
+	at org.neo4j.unsafe.impl.batchimport.input.BadCollector$3.exception(BadCollector.java:135)
+	at org.neo4j.unsafe.impl.batchimport.input.BadCollector.checkTolerance(BadCollector.java:176)
+	at org.neo4j.unsafe.impl.batchimport.input.BadCollector.collectExtraColumns(BadCollector.java:121)
+	at org.neo4j.unsafe.impl.batchimport.input.csv.InputEntityDeserializer.fetchNextOrNull(InputEntityDeserializer.java:95)
+	at org.neo4j.unsafe.impl.batchimport.input.csv.InputEntityDeserializer.fetchNextOrNull(InputEntityDeserializer.java:43)
+	at org.neo4j.helpers.collection.PrefetchingIterator.peek(PrefetchingIterator.java:60)
+	at org.neo4j.helpers.collection.PrefetchingIterator.hasNext(PrefetchingIterator.java:46)
+	at org.neo4j.helpers.collection.NestingIterator.fetchNextOrNull(NestingIterator.java:61)
+	at org.neo4j.helpers.collection.PrefetchingIterator.peek(PrefetchingIterator.java:60)
+	at org.neo4j.helpers.collection.PrefetchingIterator.hasNext(PrefetchingIterator.java:46)
+	at org.neo4j.unsafe.impl.batchimport.staging.IteratorBatcherStep.nextBatchOrNull(IteratorBatcherStep.java:53)
+	at org.neo4j.unsafe.impl.batchimport.InputIteratorBatcherStep.nextBatchOrNull(InputIteratorBatcherStep.java:41)
+	at org.neo4j.unsafe.impl.batchimport.staging.ProducerStep.process(ProducerStep.java:74)
+	at org.neo4j.unsafe.impl.batchimport.staging.ProducerStep$1.run(ProducerStep.java:54)
+2015-12-15 21:26:15.799+0000 INFO  [o.n.u.i.b.ParallelBatchImporter] Import starting
+2015-12-15 21:26:16.275+0000 WARN  [o.n.k.i.s.MetaDataStore] Missing counts store, rebuilding it.
+2015-12-15 21:26:17.196+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 1 to [/Users/Zhen/desktop/Courses/Bigdata/stackexchange/data/neostore.counts.db.b], from [/Users/Zhen/desktop/Courses/Bigdata/stackexchange/data/neostore.counts.db.a].
+2015-12-15 21:26:17.198+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 1 to [/Users/Zhen/desktop/Courses/Bigdata/stackexchange/data/neostore.counts.db.b], from [/Users/Zhen/desktop/Courses/Bigdata/stackexchange/data/neostore.counts.db.a].
+2015-12-15 21:26:17.249+0000 ERROR [o.n.u.i.b.ParallelBatchImporter] Error during import Extra column not present in header on line 7 in /Users/Zhen/Desktop/Courses/BigData/stackexchange/data/post2.csv with value  libsvm];186;;1
+org.neo4j.unsafe.impl.batchimport.input.InputException: Extra column not present in header on line 7 in /Users/Zhen/Desktop/Courses/BigData/stackexchange/data/post2.csv with value  libsvm];186;;1
+	at org.neo4j.unsafe.impl.batchimport.input.BadCollector$3.exception(BadCollector.java:135)
+	at org.neo4j.unsafe.impl.batchimport.input.BadCollector.checkTolerance(BadCollector.java:176)
+	at org.neo4j.unsafe.impl.batchimport.input.BadCollector.collectExtraColumns(BadCollector.java:121)
+	at org.neo4j.unsafe.impl.batchimport.input.csv.InputEntityDeserializer.fetchNextOrNull(InputEntityDeserializer.java:95)
+	at org.neo4j.unsafe.impl.batchimport.input.csv.InputEntityDeserializer.fetchNextOrNull(InputEntityDeserializer.java:43)
+	at org.neo4j.helpers.collection.PrefetchingIterator.peek(PrefetchingIterator.java:60)
+	at org.neo4j.helpers.collection.PrefetchingIterator.hasNext(PrefetchingIterator.java:46)
+	at org.neo4j.helpers.collection.NestingIterator.fetchNextOrNull(NestingIterator.java:61)
+	at org.neo4j.helpers.collection.PrefetchingIterator.peek(PrefetchingIterator.java:60)
+	at org.neo4j.helpers.collection.PrefetchingIterator.hasNext(PrefetchingIterator.java:46)
+	at org.neo4j.unsafe.impl.batchimport.staging.IteratorBatcherStep.nextBatchOrNull(IteratorBatcherStep.java:53)
+	at org.neo4j.unsafe.impl.batchimport.InputIteratorBatcherStep.nextBatchOrNull(InputIteratorBatcherStep.java:41)
+	at org.neo4j.unsafe.impl.batchimport.staging.ProducerStep.process(ProducerStep.java:74)
+	at org.neo4j.unsafe.impl.batchimport.staging.ProducerStep$1.run(ProducerStep.java:54)

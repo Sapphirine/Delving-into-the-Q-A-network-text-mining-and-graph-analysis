@@ -1,0 +1,1 @@
+workclass ? 0 feder gov 1 local gov 2 never work 3 privat 4 self emp inc 5 self emp inc 6 state gov 7 without pay 8 tri defin mapper fuction return key def mapr dict key return workclass dict key print list map mapr workclass

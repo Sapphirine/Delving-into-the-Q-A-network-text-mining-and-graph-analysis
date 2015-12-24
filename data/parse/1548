@@ -1,0 +1,1 @@
+say vector array valu v 1 2 3 minv math min appli math v var 0 v length v minv maxv math max appli math v var 0 v length v maxv output end v 0 6 0 1 explan push entir rang valu start 0 negativesdivid valu max rang max 1

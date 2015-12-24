@@ -1,0 +1,1 @@
+tri simpl equat like max x 20 0 1 max 0 x 25 047 max 0 x 125 011 max 0 x 1000 003 take usag x walk step initi charg 1 kwh 20 max x 20 0 1then x 20 take away 047 1 053 everi kwh 20 25 max 0 x 25 047 x 125 take away 011 053 042 everi kwh 25 125 max 0 x 125 011 etc

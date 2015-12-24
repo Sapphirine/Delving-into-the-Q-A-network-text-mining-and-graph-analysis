@@ -1,0 +1,1 @@
+one algorithm use k mean cluster algorithm basic randomli choos k datapoint set m 1 m k converg assign data point k cluster cluster set point m closest current meansreplac m mean point assign cluster good practic repeat algorithm sever time choos outcom minim distanc point cluster center m cours know k start use cross valid choos paramet though

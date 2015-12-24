@@ -1,0 +1,1 @@
+chang pattern often ? use aho corasick method whose idea first build finit automaton base pattern make singl pass text automaton find match automaton visit match state match complex automata build linear length pattern patter max pattern length match phase linear size text search

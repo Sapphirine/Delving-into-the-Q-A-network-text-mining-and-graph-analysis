@@ -1,0 +1,1 @@
+test data set 50k row use sklearn randomforestregressor get significantli differ score m use normal gini metric depend whether use rf oob predict 0 2927 kfold cv 0 3258 7 fold 0 3236 3 fold appear point especi compar rf algorithm dataset strong consider toward use manual cv rather reli oob predict

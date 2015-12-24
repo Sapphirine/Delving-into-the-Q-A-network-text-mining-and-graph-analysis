@@ -1,0 +1,1 @@
+panda best thing sinc slice bread data scienc least exampl import pdin 22 df pd read csv yourexampl csv 23 dfout 23 user item1 item20 2 41 b 1 32 c 5 6in 24 df columnsout 24 index u user u item1 u item2 dtype object 25 df corr 25 item1 item2item1 1 000000 0 995871item2 0 995871 1 000000in 26 df cov 26 item1 item2item1 4 333333 3 166667item2 3 166667 2 333333bingo !
