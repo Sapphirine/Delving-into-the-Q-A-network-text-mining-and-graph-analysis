@@ -1,0 +1,1 @@
+use hivecli tool run hiveql given sql file hive home bin hive f home hive script sqlpleas see offici document http cwiki apach org confluenc display hive languagemanu cliwhat need toput hiveql file belowselect table1 select table2 use hivecli run file

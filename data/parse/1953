@@ -1,0 +1,1 @@
+see svm captur signal tri balanc data creat train test set consist exactli 50 posit 50 neg sampl e subsampl randomli whichev one bigger also standard data subtract mean divid standard deviat balanc might tri chang class weight paramet sklearn found manual method subsampl work better

@@ -1,0 +1,1 @@
+would suggest use libsvm alreadi adjust class weight implement rather replic train sampl one modifi c paramet differ class svm optim exampl data 2 class first class 10 data would choos class weight 10 1 class 1 2 respect therefor margin violat first class would cost 10 time margin violat second class per class accuraci would balanc
