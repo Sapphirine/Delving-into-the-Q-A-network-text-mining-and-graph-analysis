@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="d3.layout.cloud.js"></script>
+<head>
+    <title>Word Cloud Example</title>
+</head>
+<style>
+    body {
+        font-family:"Lucida Grande","Droid Sans",Arial,Helvetica,sans-serif;
+    }
+    .legend {
+        border: 1px solid #555555;
+        border-radius: 5px 5px 5px 5px;
+        font-size: 0.8em;
+        margin: 10px;
+        padding: 8px;
+    }
+    .bld {
+        font-weight: bold;
+    }
+</style>
+<body>
+
+</body>
+<script>
+
+    var frequency_list = [
+  {
+    "text": "use", 
+    "size": 227.3666326583
+  }, 
+  {
+    "text": "user", 
+    "size": 192.2663355783
+  }, 
+  {
+    "text": "scienc", 
+    "size": 188.0975771349
+  }, 
+  {
+    "text": "would", 
+    "size": 119.5135072557
+  }, 
+  {
+    "text": "one", 
+    "size": 110.7414816674
+  }, 
+  {
+    "text": "like", 
+    "size": 107.2508845663
+  }, 
+  {
+    "text": "http", 
+    "size": 92.659098346
+  }, 
+  {
+    "text": "en", 
+    "size": 88.0517240742
+  }, 
+  {
+    "text": "r", 
+    "size": 86.310540361
+  }, 
+  {
+    "text": "learn", 
+    "size": 85.9245673423
+  }, 
+  {
+    "text": "also", 
+    "size": 79.6567016798
+  }, 
+  {
+    "text": "time", 
+    "size": 79.3549344199
+  }, 
+  {
+    "text": "question", 
+    "size": 79.1913095338
+  }, 
+  {
+    "text": "could", 
+    "size": 77.3180616512
+  }, 
+  {
+    "text": "answer", 
+    "size": 75.9976053536
+  }, 
+  {
+    "text": "work", 
+    "size": 74.3002608276
+  }, 
+  {
+    "text": "gener", 
+    "size": 73.4210085155
+  }, 
+  {
+    "text": "scientist", 
+    "size": 72.0187777937
+  }, 
+  {
+    "text": "tool", 
+    "size": 71.8075847591
+  }
+];
+    
+
+    var color = d3.scale.linear()
+            .domain([0,1,2,3,4,5,6,10,15,20,100])
+            .range(["#ddd", "#ccc", "#bbb", "#aaa", "#999", "#888", "#777", "#666", "#555", "#444", "#333", "#222"]);
+
+    d3.layout.cloud().size([800, 300])
+            .words(frequency_list)
+            .rotate(0)
+            .fontSize(function(d) { return d.size/2; })
+            .on("end", draw)
+            .start();
+
+    function draw(words) {
+        d3.select("body").append("svg")
+                .attr("width", 850)
+                .attr("height", 350)
+                .attr("class", "wordcloud")
+                .append("g")
+                // without the transform, words words would get cutoff to the left and top, they would
+                // appear outside of the SVG area
+                .attr("transform", "translate(320,200)")
+                .selectAll("text")
+                .data(words)
+                .enter().append("text")
+                .style("font-size", function(d) { return d.size/2 + "px"; })
+                .style("fill", function(d, i) { return color(i); })
+                .attr("transform", function(d) {
+                    return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+                })
+                .text(function(d) { return d.text; });
+    }
+</script>
+
+<div style="width: 40%;">
+    <div class="legend" align="center">
+        Topic 3
+    </div>
+
+</div>
+
+
+</html>

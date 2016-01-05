@@ -1,0 +1,40 @@
+23-Dec-2015 12:14:17.699 INFO [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+23-Dec-2015 12:27:23.412 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/9.0.0.M1
+23-Dec-2015 12:27:23.414 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 12 2015 22:05:52 UTC
+23-Dec-2015 12:27:23.414 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         9.0.0.0
+23-Dec-2015 12:27:23.414 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+23-Dec-2015 12:27:23.414 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.10.2
+23-Dec-2015 12:27:23.414 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+23-Dec-2015 12:27:23.414 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre
+23-Dec-2015 12:27:23.415 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_31-b13
+23-Dec-2015 12:27:23.415 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+23-Dec-2015 12:27:23.415 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/Zhen/Documents/apache-tomcat-9.0.0.M1
+23-Dec-2015 12:27:23.415 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/Zhen/Documents/apache-tomcat-9.0.0.M1
+23-Dec-2015 12:27:23.416 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/Zhen/documents/apache-tomcat-9.0.0.M1/conf/logging.properties
+23-Dec-2015 12:27:23.416 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+23-Dec-2015 12:27:23.416 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/Zhen/documents/apache-tomcat-9.0.0.M1
+23-Dec-2015 12:27:23.416 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/Zhen/documents/apache-tomcat-9.0.0.M1
+23-Dec-2015 12:27:23.416 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/Zhen/documents/apache-tomcat-9.0.0.M1/temp
+23-Dec-2015 12:27:23.416 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: :/usr/local/Cellar/systemg/lib/:/Users/Zhen/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+23-Dec-2015 12:27:23.656 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+23-Dec-2015 12:27:23.700 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+23-Dec-2015 12:27:23.704 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+23-Dec-2015 12:27:23.705 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+23-Dec-2015 12:27:23.706 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 956 ms
+23-Dec-2015 12:27:23.740 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+23-Dec-2015 12:27:23.740 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/9.0.0.M1
+23-Dec-2015 12:27:23.755 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Zhen/Documents/apache-tomcat-9.0.0.M1/webapps/d3
+23-Dec-2015 12:27:24.220 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Zhen/Documents/apache-tomcat-9.0.0.M1/webapps/d3 has finished in 464 ms
+23-Dec-2015 12:27:24.221 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Zhen/Documents/apache-tomcat-9.0.0.M1/webapps/docs
+23-Dec-2015 12:27:24.249 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Zhen/Documents/apache-tomcat-9.0.0.M1/webapps/docs has finished in 28 ms
+23-Dec-2015 12:27:24.257 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Zhen/Documents/apache-tomcat-9.0.0.M1/webapps/examples
+23-Dec-2015 12:27:24.756 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Zhen/Documents/apache-tomcat-9.0.0.M1/webapps/examples has finished in 498 ms
+23-Dec-2015 12:27:24.756 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Zhen/Documents/apache-tomcat-9.0.0.M1/webapps/host-manager
+23-Dec-2015 12:27:24.796 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Zhen/Documents/apache-tomcat-9.0.0.M1/webapps/host-manager has finished in 40 ms
+23-Dec-2015 12:27:24.797 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Zhen/Documents/apache-tomcat-9.0.0.M1/webapps/manager
+23-Dec-2015 12:27:24.832 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Zhen/Documents/apache-tomcat-9.0.0.M1/webapps/manager has finished in 36 ms
+23-Dec-2015 12:27:24.832 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Zhen/Documents/apache-tomcat-9.0.0.M1/webapps/ROOT
+23-Dec-2015 12:27:24.856 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Zhen/Documents/apache-tomcat-9.0.0.M1/webapps/ROOT has finished in 24 ms
+23-Dec-2015 12:27:24.861 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [http-nio-8080]
+23-Dec-2015 12:27:24.877 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [ajp-nio-8009]
+23-Dec-2015 12:27:24.878 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1172 ms

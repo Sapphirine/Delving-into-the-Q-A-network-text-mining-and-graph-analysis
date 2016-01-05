@@ -22,24 +22,24 @@ Analytics: - Text mining and feature extraction: NLTK and text mining tools in 
 - Visualizations from D3.js toolkit for implementing a visualization to represent the output 
 
 ## Classification
-*getId.py is for get accepted answers' Id the results are saved in deletedId.csv and answerId.csv
-*tranform.py is used to clean posts, including getting stem words and generating word matrix. Results are saved into accept.csv and answer.csv
-*model.py includes generating features, applying random forest classification; sentiment analysis is used to get an attitude feature
-*alchemyapi_python is the api used doing sentiment analysis
+* getId.py is for get accepted answers' Id the results are saved in deletedId.csv and answerId.csv
+* tranform.py is used to clean posts, including getting stem words and generating word matrix. Results are saved into accept.csv and answer.csv
+* model.py includes generating features, applying random forest classification; sentiment analysis is used to get an attitude feature
+* alchemyapi_python is the api used doing sentiment analysis
 
 ## LDA
 Intermediate results are saved in result folder.
-*make_tdm.ipynb or make_tdm.py clean the dataset using the module Word2VecUtility.py[1] and then generate the work-document matrix matrix.csv for the input of our LDA model. 
-*lda_spark.py uses the matrix.csv as input, and generate a lda_topicMatrix.csv where each column is a topic, and each row is a word with the same index of matrix.csv.
-*lda_spark.scala uses the matrix0.csv, which is the matrix.csv without header, to generate a topicDist.txt, which is the topic distribution of each document.
-*clean_topic_dist_result.ipynb or clean_topic_dist_result.py clean the raw output of topicDist.txt, and output the result topic_Distribution_for_each_doc.csv, of which the first column is the index of each document, and the following 10 columns are the distribution on the 10 topics. And then they link the result with document ID, i.e.  output the topic distributions of each document ID. The output is doc_id_topic_doc_dist.csv.
-*get_top20_words_each_topic.ipynb extracts the top weighted 20 words for each topic. The output is topic_word_distribution.csv.
+* make_tdm.ipynb or make_tdm.py clean the dataset using the module Word2VecUtility.py[1] and then generate the work-document matrix matrix.csv for the input of our LDA model. 
+* lda_spark.py uses the matrix.csv as input, and generate a lda_topicMatrix.csv where each column is a topic, and each row is a word with the same index of matrix.csv.
+* lda_spark.scala uses the matrix0.csv, which is the matrix.csv without header, to generate a topicDist.txt, which is the topic distribution of each document.
+* clean_topic_dist_result.ipynb or clean_topic_dist_result.py clean the raw output of topicDist.txt, and output the result topic_Distribution_for_each_doc.csv, of which the first column is the index of each document, and the following 10 columns are the distribution on the 10 topics. And then they link the result with document ID, i.e.  output the topic distributions of each document ID. The output is doc_id_topic_doc_dist.csv.
+* get_top20_words_each_topic.ipynb extracts the top weighted 20 words for each topic. The output is topic_word_distribution.csv.
 
 ## Graph Analysis
 In the “graphAnalysis” folder, the intermediate results are stored in “outputData” folder.
-*nodeCreate.ipynb or nodeCreate.py extract the schema from Posts.xml, Tags.xml and Users.xml files, and output the corresponding csv files (table format) for later uses. The output includes post.csv, user.csv, tag.csv, post_relation.csv, userPost.csv, post_tag_relation_frame.csv. All the above mentioned data are in “data” folder under the root directory.
-*post_user_database.cypher is cypher code conducting creation of nodes and links in Neo4j database.
-*useGraphDB.ipynb walks through some examples of using Neo4j StackExchange database to do some analysis, integrating packages with Neo4j, including py2neo, ipython-cypher. 
+* nodeCreate.ipynb or nodeCreate.py extract the schema from Posts.xml, Tags.xml and Users.xml files, and output the corresponding csv files (table format) for later uses. The output includes post.csv, user.csv, tag.csv, post_relation.csv, userPost.csv, post_tag_relation_frame.csv. All the above mentioned data are in “data” folder under the root directory.
+* post_user_database.cypher is cypher code conducting creation of nodes and links in Neo4j database.
+* useGraphDB.ipynb walks through some examples of using Neo4j StackExchange database to do some analysis, integrating packages with Neo4j, including py2neo, ipython-cypher. 
 Specifically, it queries the databases to get the tag-connection network data, which can be visualized using a force-directed graph and an edge bundling graph.
 
 ## Visualization

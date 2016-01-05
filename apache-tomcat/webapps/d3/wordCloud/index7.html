@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="d3.layout.cloud.js"></script>
+<head>
+    <title>Word Cloud Example</title>
+</head>
+<style>
+    body {
+        font-family:"Lucida Grande","Droid Sans",Arial,Helvetica,sans-serif;
+    }
+    .legend {
+        border: 1px solid #555555;
+        border-radius: 5px 5px 5px 5px;
+        font-size: 0.8em;
+        margin: 10px;
+        padding: 8px;
+    }
+    .bld {
+        font-weight: bold;
+    }
+</style>
+<body>
+
+</body>
+<script>
+
+    var frequency_list = [
+  {
+    "text": "data", 
+    "size": 282.6006751291
+  }, 
+  {
+    "text": "use", 
+    "size": 236.412902887
+  }, 
+  {
+    "text": "m", 
+    "size": 229.0768888777
+  }, 
+  {
+    "text": "model", 
+    "size": 99.9464514964
+  }, 
+  {
+    "text": "error", 
+    "size": 92.3756844204
+  }, 
+  {
+    "text": "predict", 
+    "size": 89.9276190098
+  }, 
+  {
+    "text": "e", 
+    "size": 88.9452887936
+  }, 
+  {
+    "text": "method", 
+    "size": 80.6016928973
+  }, 
+  {
+    "text": "function", 
+    "size": 80.1052372657
+  }, 
+  {
+    "text": "y", 
+    "size": 76.5996005231
+  }, 
+  {
+    "text": "variabl", 
+    "size": 76.2706074513
+  }, 
+  {
+    "text": "case", 
+    "size": 71.2807981287
+  }, 
+  {
+    "text": "learn", 
+    "size": 70.579713319
+  }, 
+  {
+    "text": "one", 
+    "size": 70.4309921021
+  }, 
+  {
+    "text": "first", 
+    "size": 70.2544254861
+  }, 
+  {
+    "text": "like", 
+    "size": 70.0582158269
+  }, 
+  {
+    "text": "long", 
+    "size": 69.6817529811
+  }, 
+  {
+    "text": "valu", 
+    "size": 65.9460405279
+  }, 
+  {
+    "text": "doubl", 
+    "size": 64.6417969612
+  }
+];
+    
+
+    var color = d3.scale.linear()
+            .domain([0,1,2,3,4,5,6,10,15,20,100])
+            .range(["#ddd", "#ccc", "#bbb", "#aaa", "#999", "#888", "#777", "#666", "#555", "#444", "#333", "#222"]);
+
+    d3.layout.cloud().size([800, 300])
+            .words(frequency_list)
+            .rotate(0)
+            .fontSize(function(d) { return d.size/2; })
+            .on("end", draw)
+            .start();
+
+    function draw(words) {
+        d3.select("body").append("svg")
+                .attr("width", 850)
+                .attr("height", 350)
+                .attr("class", "wordcloud")
+                .append("g")
+                // without the transform, words words would get cutoff to the left and top, they would
+                // appear outside of the SVG area
+                .attr("transform", "translate(320,200)")
+                .selectAll("text")
+                .data(words)
+                .enter().append("text")
+                .style("font-size", function(d) { return d.size/2 + "px"; })
+                .style("fill", function(d, i) { return color(i); })
+                .attr("transform", function(d) {
+                    return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+                })
+                .text(function(d) { return d.text; });
+    }
+</script>
+
+<div style="width: 40%;">
+    <div class="legend" align="center">
+        Topic 8
+        
+    </div>
+
+</div>
+
+
+</html>
