@@ -27,7 +27,8 @@ Analytics: - Text mining and feature extraction: NLTK and text mining tools in 
 *model.py includes generating features, applying random forest classification; sentiment analysis is used to get an attitude feature
 *alchemyapi_python is the api used doing sentiment analysis
 
-## LDA; intermediate results are saved in result folder
+## LDA
+Intermediate results are saved in result folder.
 *make_tdm.ipynb or make_tdm.py clean the dataset using the module Word2VecUtility.py[1] and then generate the work-document matrix matrix.csv for the input of our LDA model. 
 *lda_spark.py uses the matrix.csv as input, and generate a lda_topicMatrix.csv where each column is a topic, and each row is a word with the same index of matrix.csv.
 *lda_spark.scala uses the matrix0.csv, which is the matrix.csv without header, to generate a topicDist.txt, which is the topic distribution of each document.
